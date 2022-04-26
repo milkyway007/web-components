@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Components</title>
+    <style>
+        div {
+            border: 2px solid orange;
+        }
+    </style>
     <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
 </head>
-<body>   
-    <p></p><ll-tooltip>Web Components are awesome!</ll-tooltip></p>
+<body>  
+    <p></p><ll-tooltip text="Web components is a set of standards.">Web Components are awesome!</ll-tooltip></p>
+    <ll-tooltip></ll-tooltip>
+    <div>This does not get the web component styles!</div>
+    <a is="ll-confirm-link" href="https://www.google.com">Google</a>
 </body>
 </html>
